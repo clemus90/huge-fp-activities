@@ -4,7 +4,7 @@ val f: (Double) -> Int = { a -> (a * 3).toInt() }
 val g: (Long) -> Double = { a -> a + 2.0 }
 
 // Exercise 7
-val compose: Nothing = TODO("writer a curried Compose")
+//val compose: Nothing = TODO("writer a curried Compose")
 
 // Exercise 8
 fun polymorphicCompose():Nothing = TODO("write the compose")
@@ -26,14 +26,13 @@ fun curry(): Nothing = TODO("curry any 2 arg function")
 // Exercise 13
 fun swap(): Nothing = TODO("curry any 2 arg function")
 
-fun main() {
 
-}
 
 fun cos(arg: Double): Double {
     fun f(x: Double): Double = Math.PI / 2 - x
     fun sin(x: Double): Double = Math.sin(x)
-    return compose(::f, ::sin)(arg)
+    //return compose(::f, ::sin)(arg)
+    return 0.0
 }
 
 val taxRate = 0.09
