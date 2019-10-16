@@ -9,4 +9,4 @@ fun moreIdiomaticToString(list: List<Char>, s: String): String =
     TODO("A more idiomatic to string using drop and first")
 
 fun cleanToString(list:List<Char>): String =
-    TODO("An implementation that doesn't require de string seed")
+    TODO("An implementation that doesn't require a string seed")
