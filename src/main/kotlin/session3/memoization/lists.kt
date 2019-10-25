@@ -10,4 +10,15 @@ fun <T, U> map(f: (T) -> U, list: List<T>): List<U> = TODO("map each element of 
 // Extra: Use foldLeft
 
 // Hint think of fibonacci as the following sequence (1, 1), (1, 2), (2, 3), (3, 5), (5, 8)
-fun fiboIterative(n: BigInteger): String = TODO("Write fibonacci in terms of iterate and map")
+fun fiboIterative(n: Int): String = TODO("Write fibonacci in terms of iterate and map")
+
+val cache = mutableMapOf<Int, Int>()
+
+fun double(x: Int) =
+    if (cache.containsKey(x)) {
+        cache[x]
+    } else {
+        val result = x * 2
+        cache.put(x, result)
+        result
+    }
